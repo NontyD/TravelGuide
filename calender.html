@@ -8,12 +8,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="assests/styles.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
     <!-- Navigation Menu -->
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="destinations.html">Destinations</a></li>
@@ -23,74 +25,151 @@
         </ul>
     </nav>
 
-</body>
-<!-- Monthly Calendar Section -->
+    <!-- Monthly Calendar Section -->
     <section id="calendar">
         <h2>Monthly Calendar</h2>
         <div class="calendar-container">
-            <a href="#january" class="month">January</a>
-            <a href="#february" class="month">February</a>
-            <a href="#march" class="month">March</a>
-            <a href="#april" class="month">April</a>
-            <a href="#may" class="month">May</a>
-            <a href="#june" class="month">June</a>
-            <a href="#july" class="month">July</a>
-            <a href="#august" class="month">August</a>
-            <a href="#september" class="month">September</a>
-            <a href="#october" class="month">October</a>
-            <a href="#november" class="month">November</a>
-            <a href="#december" class="month">December</a>
-        </div>
+            <div class="calendar-card">
+                <input type="checkbox" id="january" class="calendar-checkbox">
+                <label for="january" class="calendar-label">
+                    <div class="calendar-front">January</div>
+                    <div class="calendar-back">
+                        <p>Weather: Warm and sunny. Ideal for beach activities.</p>
+                        <p>Events: New Year's celebrations, Cape Town Minstrel Carnival.</p>
+                    </div>
+                </label>
+            </div>
 
-        <div class="month-info">
-            <div id="january">
-                <h3>January</h3>
-                <p>January is the height of summer in South Africa, with warm and sunny weather. It is a great time for beach holidays and exploring the natural beauty of the country.</p>
+            <div class="calendar-card">
+                <input type="checkbox" id="february" class="calendar-checkbox">
+                <label for="february" class="calendar-label">
+                    <div class="calendar-front">February</div>
+                    <div class="calendar-back">
+                        <p>Weather: Hot and dry. Great for safari adventures.</p>
+                        <p>Events: Harvest festivals in wine regions.</p>
+                    </div>
+                </label>
             </div>
-            <div id="february">
-                <h3>February<br>Cape Winelands Harvest Festivals</h3>
-                <p>February continues with the summer season, offering warm temperatures and plenty of outdoor activities. It is a perfect month for wildlife viewing in national parks.</p>
+
+            <div class="calendar-card">
+                <input type="checkbox" id="march" class="calendar-checkbox">
+                <label for="march" class="calendar-label">
+                    <div class="calendar-front">March</div>
+                    <div class="calendar-back">
+                        <p>Weather: Warm. Ideal for exploring vineyards.</p>
+                        <p>Events: Cape Town Carnival, Cape Town International Jazz Festival.</p>
+                    </div>
+                </label>
             </div>
-            <div id="march">
-                <h3>March<br>Cape Town Carnival<br>Cape Town International Jazz Festival</h3>
-                <p>March brings the end of summer and the beginning of autumn. The weather remains warm and it is an excellent time for visiting vineyards and experiencing harvest season.</p>
+
+            <div class="calendar-card">
+                <input type="checkbox" id="april" class="calendar-checkbox">
+                <label for="april" class="calendar-label">
+                    <div class="calendar-front">April</div>
+                    <div class="calendar-back">
+                        <p>Weather: Cooler. Great for hiking and countryside exploration.</p>
+                        <p>Events: Two Oceans Marathon.</p>
+                    </div>
+                </label>
             </div>
-            <div id="april">
-                <h3>April<br>Two Oceans Marathon</h3>
-                <p>April is autumn in South Africa, with cooler temperatures and fewer tourists. It is a great time for hiking and exploring the countryside.</p>
+
+            <div class="calendar-card">
+                <input type="checkbox" id="may" class="calendar-checkbox">
+                <label for="may" class="calendar-label">
+                    <div class="calendar-front">May</div>
+                    <div class="calendar-back">
+                        <p>Weather: Cool. Ideal for safari trips.</p>
+                    </div>
+                </label>
             </div>
-            <div id="may">
-                <h3>May</h3>
-                <p>May brings cooler temperatures and is an ideal time for safari trips as the vegetation is less dense, making it easier to spot wildlife.</p>
+
+            <div class="calendar-card">
+                <input type="checkbox" id="june" class="calendar-checkbox">
+                <label for="june" class="calendar-label">
+                    <div class="calendar-front">June</div>
+                    <div class="calendar-back">
+                        <p>Weather: Winter begins. Ideal for whale watching.</p>
+                        <p>Events: Knysna Oyster Festival.</p>
+                    </div>
+                </label>
             </div>
-            <div id="june">
-                <h3>June<br>Knysna Oyster Festival</h3>
-                <p>June marks the beginning of winter in South Africa. It is a great time for whale watching along the coast and enjoying the quieter off-season.</p>
+
+            <div class="calendar-card">
+                <input type="checkbox" id="july" class="calendar-checkbox">
+                <label for="july" class="calendar-label">
+                    <div class="calendar-front">July</div>
+                    <div class="calendar-back">
+                        <p>Weather: Cool. Great for indoor attractions.</p>
+                        <p>Events: Durban July.</p>
+                    </div>
+                </label>
             </div>
-            <div id="july">
-                <h3>July<br>Durban July</h3>
-                <p>July is winter in South Africa, with cooler temperatures and fewer crowds. It is a good time for visiting indoor attractions and experiencing the country's rich culture.</p>
+
+            <div class="calendar-card">
+                <input type="checkbox" id="august" class="calendar-checkbox">
+                <label for="august" class="calendar-label">
+                    <div class="calendar-front">August</div>
+                    <div class="calendar-back">
+                        <p>Weather: Mild. Great for exploring cities.</p>
+                        <p>Events: Oppikoppi Music Festival.</p>
+                    </div>
+                </label>
             </div>
-            <div id="august">
-                <h3>August<br>Oppikoppi Music Festival</h3>
-                <p>August continues the winter season, with mild temperatures and fewer tourists. It is a great time for exploring the cities and enjoying indoor activities.</p>
+
+            <div class="calendar-card">
+                <input type="checkbox" id="september" class="calendar-checkbox">
+                <label for="september" class="calendar-label">
+                    <div class="calendar-front">September</div>
+                    <div class="calendar-back">
+                        <p>Weather: Spring. Ideal for visiting gardens and nature reserves.</p>
+                        <p>Events: Hermanus Whale Festival.</p>
+                    </div>
+                </label>
             </div>
-            <div id="september">
-                <h3>September<br>Hermanus Whale Festival</h3>
-                <p>September is heritage month in South Africa. Different people of South Africa dress differently to celebrate their heritage. It is also springtime, making it ideal for visiting gardens and nature reserves.</p>
+
+            <div class="calendar-card">
+                <input type="checkbox" id="october" class="calendar-checkbox">
+                <label for="october" class="calendar-label">
+                    <div class="calendar-front">October</div>
+                    <div class="calendar-back">
+                        <p>Weather: Spring continues. Great for outdoor activities.</p>
+                    </div>
+                </label>
             </div>
-            <div id="october">
-                <h3>October</h3>
-                <p>October is spring in South Africa, with blooming flowers and warmer temperatures. It is a great time for outdoor activities and exploring the natural beauty of the country.</p>
+
+            <div class="calendar-card">
+                <input type="checkbox" id="november" class="calendar-checkbox">
+                <label for="november" class="calendar-label">
+                    <div class="calendar-front">November</div>
+                    <div class="calendar-back">
+                        <p>Weather: Warm. Ideal for beach holidays and outdoor adventures.</p>
+                        <p>Events: Ficksburg Cherry Festival.</p>
+                    </div>
+                </label>
             </div>
-            <div id="november">
-                <h3>November<br>Ficksburg Cherry Festival</h3>
-                <p>November brings warmer temperatures and is a great time for beach holidays and outdoor adventures. It is also a good time for bird watching as many migratory birds arrive.</p>
-            </div>
-            <div id="december">
-                <h3>December</h3>
-                <p>December is the start of summer in South Africa, with warm weather and festive celebrations. It is a popular time for tourists, with many events and activities taking place.</p>
+
+            <div class="calendar-card">
+                <input type="checkbox" id="december" class="calendar-checkbox">
+                <label for="december" class="calendar-label">
+                    <div class="calendar-front">December</div>
+                    <div class="calendar-back">
+                        <p>Weather: Start of summer. Popular for festive celebrations.</p>
+                    </div>
+                </label>
             </div>
         </div>
     </section>
+
+</body>
+<footer class="footer">
+    <div class="footer-section">
+        <div class="newsletter">
+            <h3>Subscribe to our newsletter</h3>
+            <form>
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</footer>
 </html>

@@ -125,3 +125,65 @@ body {
 .newsletter button:hover {
     background: #ff4500;
 }
+/* Calendar Styles */
+.calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.calendar-card {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.calendar-checkbox {
+    display: none;
+}
+
+.calendar-label {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: block;
+}
+
+.calendar-checkbox:checked + .calendar-label {
+    transform: rotateY(180deg);
+}
+
+.calendar-front, .calendar-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.calendar-front {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.5em;
+}
+
+.calendar-back {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    text-align: left;
+}
+
+.calendar-back p {
+    margin: 10px 0;
+}
