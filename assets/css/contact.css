@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eef2f3;
+    color: #333;
+}
+
+nav {
+    background: #1e3a5f;
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f9a825;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Left Column Styles */
+#contact-left {
+    width: 45%;
+    text-align: left;
+}
+
+#contact-left h2 {
+    color: #1e3a5f;
+    font-size: 2.5em;
+}
+
+#contact-left p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Contact Form Styles */
+#contact-right {
+    width: 45%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-right form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-right form label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1e3a5f;
+}
+
+#contact-right form input[type="text"],
+#contact-right form input[type="email"],
+#contact-right form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#contact-right form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contact-right form button[type="submit"] {
+    background: #1e3a5f;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+#contact-right form button[type="submit"]:hover {
+    background: #f9a825;
+}
+
+/* Chat Box Styles */
+#chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+}
+
+.chat-container {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.chat-container header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+.chat-container textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.chat-container button {
+    background: #1e3a5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.chat-container button:hover {
+    background: #f9a825;
+}
