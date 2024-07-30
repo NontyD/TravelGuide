@@ -163,3 +163,33 @@ section {
 .chat-container button:hover {
     background: #f9a825;
 }
+/* Footer Styles */
+.footer {
+    background: #1e3a5f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 40px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #f9a825;
+}
