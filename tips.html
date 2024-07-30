@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/tips.css">
 </head>
 
 <body>
@@ -20,71 +20,44 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="destinations.html">Destinations</a></li>
             <li><a href="tips.html">Travel Tips</a></li>
-            <li><a href="calender.html">Calendar</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <section id="tips">
-        
-        <a class="weatherwidget-io" href="https://forecast7.com/en/n33d9218d42/cape-town/" data-label_1="CAPE TOWN"
-            data-label_2="WEATHER" data-theme="original">CAPE TOWN WEATHER</a>
-        <script>
-            ! function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = 'https://weatherwidget.io/js/widget.min.js';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }
-            }(document, 'script', 'weatherwidget-io-js');
-        </script>
-        <iframe
-  title="fx"
-  src="https://wise.com/gb/currency-converter/fx-widget/converter?sourceCurrency=EUR&targetCurrency=ZAR"
-  height=490
-  width=340
-  frameBorder="0"
-  allowtransparency="true"
-></iframe>
-<h2>Travel Tips</h2>
+
+    
+        <h2>Travel Tips</h2>
         <div class="tips-container">
-            <div class="tip">
+            <div class="tip-card">
                 <h3>Safety and Health</h3>
                 <ul>
                     <li>Stay Informed: Check the latest travel advisories from your home country regarding safety in
                         South Africa.</li>
                     <li>Vaccinations: Ensure you're up to date on routine vaccines and consider vaccinations for
                         Hepatitis A, Typhoid, and Yellow Fever if you're coming from an endemic area.</li>
-                    <li>Malaria Prevention: If you plan to visit areas like Kruger National Park, take malaria
-                        prophylaxis and use mosquito repellent.</li>
-                    <li>Health Insurance: Have comprehensive travel insurance that covers health and emergency
-                        evacuation.</li>
                 </ul>
             </div>
-            <div class="tip">
+            <div class="tip-card">
                 <h3>Transportation</h3>
                 <ul>
                     <li>Car Rentals: Renting a car is a great way to explore, but make sure to drive on the left-hand
                         side of the road.</li>
                     <li>Public Transport: Use reputable taxi services or ride-sharing apps like Uber. Avoid minibus
                         taxis unless you're familiar with the routes and safety.</li>
-                    <li>Domestic Flights: South Africa has a well-connected network of domestic flights, which is useful
-                        for traveling between major cities.</li>
+                    
                 </ul>
             </div>
-            <div class="tip">
+            <div class="tip-card">
                 <h3>Safety Precautions</h3>
                 <ul>
                     <li>Personal Belongings: Be cautious with your belongings. Use hotel safes and avoid displaying
                         expensive items.</li>
                     <li>Avoid Walking at Night: Especially in unfamiliar areas or townships. Opt for taxis or other
                         forms of transportation.</li>
-                    <li>ATMs and Cash: Use ATMs in well-lit, secure areas like malls. Avoid carrying large amounts of
-                        cash.</li>
+                    
                 </ul>
             </div>
-            <div class="tip">
+            <div class="tip-card">
                 <h3>Wildlife and Nature</h3>
                 <ul>
                     <li>National Parks: Respect wildlife rules. Stay in your vehicle during game drives and maintain a
@@ -92,7 +65,7 @@
                     <li>Guided Tours: For safaris and excursions, use reputable tour operators and guides.</li>
                 </ul>
             </div>
-            <div class="tip">
+            <div class="tip-card">
                 <h3>Cultural Etiquette</h3>
                 <ul>
                     <li>Greetings: A handshake is common. In Zulu culture, a respectful bow or curtsy may be
@@ -101,7 +74,7 @@
                         areas.</li>
                 </ul>
             </div>
-            <div class="tip">
+            <div class="tip-card">
                 <h3>Language</h3>
                 <ul>
                     <li>Languages: South Africa has 11 official languages. English is widely spoken, but learning a few
@@ -109,7 +82,7 @@
                     <li>Signage: Most signs and information will be in English.</li>
                 </ul>
             </div>
-            <div class="tip">
+            <div class="tip-card">
                 <h3>Currency and Payments</h3>
                 <ul>
                     <li>Currency: The South African Rand (ZAR) is the official currency. Credit and debit cards are
@@ -118,7 +91,7 @@
                         staff and taxi drivers.</li>
                 </ul>
             </div>
-            <div class="tip">
+            <div class="tip-card">
                 <h3>Weather and Clothing</h3>
                 <ul>
                     <li>Seasons: South Africa has varying climates. Pack appropriately for the season and the region
@@ -127,7 +100,7 @@
                         in the summer.</li>
                 </ul>
             </div>
-            <div class="tip">
+            <div class="tip-card">
                 <h3>Emergency Contacts</h3>
                 <ul>
                     <li>Local Emergency Numbers: Keep a list of local emergency numbers, including the police (10111),
@@ -137,17 +110,39 @@
             </div>
         </div>
     </section>
-</body>
-<footer class="footer">
-    <div class="footer-section">
-        <div class="newsletter">
-            <h3>Subscribe to our newsletter</h3>
-            <form>
-                <input type="email" placeholder="Your email address">
-                <button type="submit">Subscribe</button>
-            </form>
+    <section id="tips">
+        <div class="widget-container">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/n33d9218d42/cape-town/" data-label_1="CAPE TOWN"
+                data-label_2="WEATHER" data-theme="original">CAPE TOWN WEATHER</a>
+            <script>
+                ! function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = 'https://weatherwidget.io/js/widget.min.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'weatherwidget-io-js');
+            </script>
+
+            <iframe title="fx"
+                src="https://wise.com/gb/currency-converter/fx-widget/converter?sourceCurrency=EUR&targetCurrency=ZAR"
+                height="490" width="340" frameBorder="0" allowtransparency="true"></iframe>
         </div>
-    </div>
-</footer>
+
+
+    <footer class="footer">
+        <div class="footer-section">
+            <div class="newsletter">
+                <h3>Subscribe to our newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
 
 </html>
