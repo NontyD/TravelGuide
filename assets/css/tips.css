@@ -62,43 +62,31 @@ h2 {
 
 /* Footer Styles */
 .footer {
-    background: #333;
+    background: #1e3a5f;
     color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
 }
 
 .footer-section {
-    max-width: 1200px;
-    margin: auto;
-}
-
-.newsletter {
-    margin-top: 20px;
-}
-
-.newsletter form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.newsletter input[type="email"] {
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.newsletter button[type="submit"] {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background: #f60;
+.social-icon {
     color: #fff;
-    cursor: pointer;
+    font-size: 24px;
+    margin: 0 40px;
+    transition: color 0.3s;
 }
 
-.newsletter button[type="submit"]:hover {
-    background: #e55;
+.social-icon:hover {
+    color: #f9a825;
 }
