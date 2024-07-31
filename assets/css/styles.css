@@ -1,36 +1,24 @@
-/* General Reset */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #f0e68c; /* Light golden yellow */
 }
 
-/* Body Styling */
-body {
-    background: url('assets/images/hero.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Navigation Bar Styling */
 .navbar {
+    background-color: #006400; /* Dark green */
+    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px 0;
     z-index: 1000;
-    text-align: center;
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .navbar ul li {
@@ -38,154 +26,55 @@ body {
 }
 
 .navbar ul li a {
-    color: #fff;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
     text-decoration: none;
-    font-size: 16px;
 }
 
 .navbar ul li a:hover {
-    text-decoration: underline;
+    background-color: #228B22; /* Forest green */
+    color: white;
 }
 
-/* Hero Section Styling */
 .hero {
+    background: url('assets/images/hero.jpg') no-repeat center center/cover;
+    height: 400px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 100vh;
-    padding-top: 60px;
-    padding: 0 20px;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 60px; /* Add margin to account for fixed navbar */
 }
 
 .hero-text {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
     border-radius: 10px;
-    max-width: 800px;
 }
 
-.hero-text h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-.widget-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin-right: 20px;
-}
-
-/* Footer Styles */
 .footer {
-    background: #1e3a5f;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #006400; /* Dark green */
+    color: white;
     text-align: center;
-}
-.footer-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .social-icon {
-    color: #fff;
-    font-size: 24px;
-    margin: 0 20px;
-    transition: color 0.3s;
+    margin: 0 20px; /* Increased margin for more space between icons */
+    color: white;
+    text-decoration: none;
 }
 
 .social-icon:hover {
-    color: #f9a825;
-}
-
-/* Monthly Calendar Section */
-.calendar-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.calendar-card {
-    width: 200px;
-    margin: 10px;
-    perspective: 1000px;
-}
-
-.calendar-checkbox {
-    display: none;
-}
-
-.calendar-label {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transform: rotateY(0deg);
-    transition: transform 0.6s;
-}
-
-.calendar-checkbox:checked + .calendar-label {
-    transform: rotateY(180deg);
-}
-
-.calendar-front,
-.calendar-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    box-sizing: border-box;
-    background: #fff;
-}
-
-.calendar-front {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
-}
-
-.calendar-back {
-    transform: rotateY(180deg);
-    text-align: left; /* Align text to the left */
-}
-
-.event {
-    margin-bottom: 15px; /* Space between events */
-}
-
-.event a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.event a:hover {
-    text-decoration: underline;
-}
-
-.event p {
-    margin: 5px 0; /* Space between the link and description */
+    color: #ddd;
 }
