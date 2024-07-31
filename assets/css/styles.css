@@ -112,19 +112,18 @@ body {
     color: #f9a825;
 }
 
-/* Calendar Styles */
+/* Monthly Calendar Section */
 .calendar-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    padding: 20px;
 }
 
 .calendar-card {
     width: 200px;
-    height: 200px;
+    margin: 10px;
     perspective: 1000px;
-    cursor: pointer;
 }
 
 .calendar-checkbox {
@@ -132,45 +131,61 @@ body {
 }
 
 .calendar-label {
+    display: block;
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
+    cursor: pointer;
     transform-style: preserve-3d;
-    display: block;
+    transform: rotateY(0deg);
+    transition: transform 0.6s;
 }
 
 .calendar-checkbox:checked + .calendar-label {
     transform: rotateY(180deg);
 }
 
-.calendar-front, .calendar-back {
+.calendar-front,
+.calendar-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
     border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
 }
 
 .calendar-front {
-    background-color: #4CAF50;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
 }
 
 .calendar-back {
-    background-color: #fff;
-    color: #333;
     transform: rotateY(180deg);
-    text-align: left;
+    text-align: left; /* Align text to the left */
 }
 
-.calendar-back p {
-    margin: 10px 0;
+.event {
+    margin-bottom: 15px; /* Space between events */
+}
+
+.event a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event a:hover {
+    text-decoration: underline;
+}
+
+.event p {
+    margin: 5px 0; /* Space between the link and description */
 }
