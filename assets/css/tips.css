@@ -45,7 +45,7 @@ section {
 
 h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
@@ -54,6 +54,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .tip-card {

@@ -12,6 +12,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
+    padding: 20px;
 }
 
 .navbar ul {
@@ -59,7 +60,7 @@ body {
     background-color: #006400; /* Dark green */
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;

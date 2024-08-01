@@ -116,54 +116,6 @@ section {
 #contact-right form button[type="submit"]:hover {
     background: #f9a825;
 }
-
-/* Chat Box Styles */
-#chat {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-}
-
-.chat-container {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-.chat-container header {
-    font-size: 18px;
-    font-weight: bold;
-    color: #1e3a5f;
-    margin-bottom: 10px;
-}
-
-.chat-container textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.chat-container button {
-    background: #1e3a5f;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
-}
-
-.chat-container button:hover {
-    background: #f9a825;
-}
 /* Footer Styles */
 .footer {
     background-color: #006400; /* Dark green */
