@@ -1,17 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0e68c; /* Light golden yellow */
+    font-family: 'Roboto', sans-serif;
+    padding-top: 80px; /* Space for fixed navbar */
 }
 
 .navbar {
-    background-color: #006400; /* Dark green */
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    padding: 20px;
+    background-color: transparent; /* Remove background color */
 }
 
 .navbar ul {
@@ -28,9 +29,13 @@ body {
 .navbar ul li a {
     display: inline-block;
     color: white;
+    background-color: #006400; /* Dark green */
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    border-radius: 50px; /* Make buttons oval */
+    margin: 5px; /* Space between buttons */
+    transition: background-color 0.3s;
 }
 
 .navbar ul li a:hover {
