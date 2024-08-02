@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     padding-top: 80px; /* Space for fixed navbar */
+    text-align: center;
 }
 
 .navbar {
@@ -90,7 +91,7 @@ body {
     backface-visibility: hidden;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 20px;
+    padding: 0; /* Removed padding */
     box-sizing: border-box;
     background: #fff;
     overflow: hidden;
@@ -98,16 +99,35 @@ body {
 
 .calendar-front {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
     font-weight: bold;
     color: #333;
+    background: #fff;
+}
+
+.calendar-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded corners on the top */
+}
+
+.calendar-front .month {
+    background-color: #006400; /* Dark green background */
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 10px 10px; /* Rounded corners on the bottom */
 }
 
 .calendar-back {
     transform: rotateY(180deg);
     text-align: left;
+    padding: 20px; /* Added padding for back */
 }
 
 .event {
@@ -128,7 +148,6 @@ body {
     margin: 5px 0;
     overflow-wrap: break-word; /* Ensure text wraps correctly */
 }
-
 /* Footer */
 .footer {
     background-color: #006400; /* Dark green */
